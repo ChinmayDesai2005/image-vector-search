@@ -2,7 +2,7 @@ from google.cloud import aiplatform
 from api import ImageFunctions
 import json
 
-aiplatform.init(project="trainingmlteam", location="asia-south1")
+aiplatform.init(project="PROJECT_NAME", location="LOCATION")
 
 class VectorSearch():
     def search_image(query_embeds):
