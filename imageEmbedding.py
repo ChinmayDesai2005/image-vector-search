@@ -3,7 +3,7 @@ from vertexai.vision_models import Image, MultiModalEmbeddingModel
 
 class ImagetoEmbedding:
     def __init__(self):
-        vertexai.init(project="trainingmlteam", location="us-central1")
+        vertexai.init(project="PROJECT_NAME", location="LOCATION")
     
     def generateEmbedding(self, path_to_image):
         model = MultiModalEmbeddingModel.from_pretrained("multimodalembedding")
