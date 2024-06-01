@@ -11,12 +11,12 @@ class VectorSearch():
             cloth_names = json.load(file)
 
         my_index_endpoint = aiplatform.MatchingEngineIndexEndpoint(
-                index_endpoint_name="projects/trainingmlteam/locations/asia-south1/indexEndpoints/2095440464122478592"
+                index_endpoint_name="projects/trainingmlteam/locations/asia-south1/indexEndpoints/INDEX_ENDPOINT_ID"
             )
 
             # Query the index endpoint for the nearest neighbors.
         resp = my_index_endpoint.find_neighbors(
-            deployed_index_id="vector_search_clothing_1717238235242",
+            deployed_index_id="DEPLOYED_INDEX_ID",
             queries=query_embeds,
             num_neighbors=5,
         )
