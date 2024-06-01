@@ -7,7 +7,7 @@ from PIL import Image
 from os import listdir
 from os.path import isfile, join
 
-images_folder = r"C:\Users\Chinmay_D\Desktop\Clothing_images"
+images_folder = r"path_to_dataset_images"
 
 original_images = [rf"{images_folder}\{f}" for f in listdir(images_folder) if isfile(join(images_folder, f))]
 
