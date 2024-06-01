@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cloud Vision Integration</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static',filename='styles/index.css') }}">
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>CloudVision Integration</h1>
+            <form action = "/success" method = "post" enctype="multipart/form-data">   
+                <input class="file" type="file" name="file" />
+                <label for="tools">Choose a tool: </label>   
+                <select class="tools" name="tools">
+                    <option value="text_detection">Text Detection</option>
+                    <option value="landmark_detection">Landmark Detection</option>
+                    <option value="object_detection">Object Detection</option>
+                </select>
+                <input class="upload" type = "submit" value="Upload">   
+            </form> 
+        </div>
+    </body>
+</html>

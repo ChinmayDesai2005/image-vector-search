@@ -1,0 +1,15 @@
+# ignore all json files
+*.json
+
+#ignore image folders
+static/results
+static/uploads
+static/file.jpg
+
+objects/
+
+#env file
+env/
+__pycache__/
+
+vectorSearch.ipynb

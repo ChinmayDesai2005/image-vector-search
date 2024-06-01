@@ -1,0 +1,17 @@
+<html> 
+   <head> 
+      <title>success</title> 
+      <link rel="stylesheet" href="{{ url_for('static',filename='styles/index.css') }}">
+   </head> 
+   <body>
+      <div class="result-wrapper"> 
+      <div class="image-wrapper">
+         <img src="{{ url_for('static',filename=path_to_content) }}" alt="">
+         <p>File Name: {{name}}</p>
+      </div>
+      <div class="result">
+         <p>Result: {{text}} </p>
+      </div>
+   </div>
+   </body> 
+</html>

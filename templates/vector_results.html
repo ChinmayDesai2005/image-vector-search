@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Vector Image Search</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static',filename='styles/index.css') }}">
+    </head>
+    <body>
+        <div class="results-wrapper">
+            <h1>Vector Image Results</h1>
+            <h3>Original Image:</h3>
+            <div class="original-image">
+                <img src="{{ original_image }}" alt="OriginalImage">
+            </div>
+            <h3>Result Images: </h3>
+            <div class="result-images">
+                {% for image_url in image_urls %}
+                    <img src="{{ image_url }}" alt="Image">
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>
